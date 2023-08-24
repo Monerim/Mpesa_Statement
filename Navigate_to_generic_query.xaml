@@ -1,0 +1,215 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Navigate_to_generic_query" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,1307" sap2010:WorkflowViewState.IdRef="Navigate_to_generic_query_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Navigate_to_generic_query" sap:VirtualizedContainerService.HintSize="546,1242" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="Generic Query" Name="GenericQuery" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Test&quot;]" />
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe iNSight'" sap:VirtualizedContainerService.HintSize="484,950" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="f2319cde3f6594b781f608ff987c07a7" Selector="&lt;html app='msedge.exe' title='iNSight' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,803" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f642db64-5f7d-4b53-abcc-777313c96a31" InformativeScreenshot="21d2a0b947b6f949e80a423bed507463" Selector="&lt;html app='msedge.exe' title='iNSight' /&gt;&lt;webctrl aria-role='button' tag='DIV' /&gt;" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="388,155" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="[GenericQuery]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="14c469c2-1451-4c02-8fc7-eee8c36ca5b6" InformativeScreenshot="49c6aae7437e910040514e68fd7538c9" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'msedge.exe iNSight'" sap:VirtualizedContainerService.HintSize="388,155" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:ClickImage.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:ClickImage.CursorPosition>
+              <ui:ClickImage.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKsAAAAjCAYAAADrC/qsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOmSURBVHhe7ZxLi9RAEID37MWTKHjzp8y/EXIQZVh1L4LgeQYP4k0EWV+bncWLiP4AZXfWg4+D4EGEQXHwMau7ziplqtM9qUoqyUSZR0l90JDuSqc7219qelgyK2AYSmCynr79DFaiW3MrJ9c2Ye3Bc3j/+bufgWGUw2Q92r7rj+bDIJG0+/AFrJxZh3fDPd9qGDILlTVw9dFLOL+162uGITO1rBiTPsoDUgxLgLYdX70H7fWnsD/+5WLD0QEcW73vjg2jjEayfvkx9rWUvIx5yuLDvZ9wNt6By5t93yL3NwzKQmRFRgeHcOTcHV+T+xsGZWGyInVxw6AwWfPy1Mk067hhUExWQw2NZJVKQIphCUgxLAF6bBgSpbLOG5PVqMMyq6EG27P+A4M4glbUg4GvG7NFcWbtQ7fVghYtneyfDEvNoAcRm3sEPTO+Fp17Vr/Y3W1fdwyg11GQ5ba7RTnF+zHyKMysmFGnyUQ085LznRhd6Dtp0ngU04tV9+vhR38SQ7HcNoBmc3LNFo7hmzMq5o59J1sKPI/373e4zFgPY2Xz99eP03lEN26m9+qjSGHOitC3Z2WLWkaSZSOyuEHQyXGyyGHBXD0IVN+Pis0W3omaiTGIe0wSR+XcqcjVsnLh6JyxH7m3/P24esnDogCdsrLM4BfIFb/ABSnIIlEBHWRBG/VLmog0+cwnUikrFalKVip1Cs4jfYiqYlhJ7qH2QV9e9G0DShecLDCeMxE4K26xBekmIjTsl8k6ZcaqlJWKVidrcY7pPIqyUkGZuApR+AVLWBAHWWCUgmVfQp2sDfpxWYNMVZTNPYGJTO7Fw2XlsQz5+v0Otk35QC0xCr9geUkKi0IXEY9L5KmStWG/TNYwpywu7lkTxLm7a9Nxc/L7jB/qOF/5oZJlxf5RB4vURw/69qwBv8D0o5BJlo+HrFUpa0KDflRWJBUx10/Cy8dK/nx6TjIGm6OXOesfBC2R1bXn/j4KUZlZ/0dctkTxqiT/a1BW/qBpROGe1WgKZnzNX6wCpbJe2dotZD6pBKQYloAUs3ewZkzY0swkW88fJiu+YYpvmiLjw99wKd5xx0hetFACUgxLgLadurjhro1jIPZ2qzENTFZ8dx/f4Z831x6/gjbJsoYhwWTFX0XBX0e5/uQ1fPi671tnB46BY+GYbz+NfKthyDBZkTcfv7l3+k9c2GAf3bMoOAaOhWMaRh0FWQ1jWTFZDTWYrIYaTFZDDSaroQSAP7kqs3R9FRo0AAAAAElFTkSuQmCC" />
+              </ui:ClickImage.Image>
+              <ui:ClickImage.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="be82d83d-cb6d-4e47-8cd7-c627e01fc094" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:ClickImage.Target>
+            </ui:ClickImage>
+            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT'" sap:VirtualizedContainerService.HintSize="388,155" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="G2 Customer Statement">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="50">
+                  <x:String>111test</x:String>
+                  <x:String>1DAY AIRTIME USAGE</x:String>
+                  <x:String>1DAY AIRTIME USAGE - CCS</x:String>
+                  <x:String>1Name</x:String>
+                  <x:String>AA_TRAINING_JOB</x:String>
+                  <x:String>AA_TRAINING_STREAM</x:String>
+                  <x:String>AAA_tables</x:String>
+                  <x:String>Airtime to Mpesa Daily</x:String>
+                  <x:String>Airtime to Mpesa Monthly</x:String>
+                  <x:String>ALERT_INV - HIGH SMS</x:String>
+                  <x:String>All Prof lookup MSISDN latest</x:String>
+                  <x:String>All Profile lookup MSISDN</x:String>
+                  <x:String>AMA vs VXV MOC</x:String>
+                  <x:String>AMA vs VXV SMS MO</x:String>
+                  <x:String>Analytics Status</x:String>
+                  <x:String>Blocking_Sessions</x:String>
+                  <x:String>Case Activity</x:String>
+                  <x:String>Case Analysis</x:String>
+                  <x:String>Case Worklist</x:String>
+                  <x:String>CC Airtime Transfer - CCS</x:String>
+                  <x:String>CC Airtime_Transfer</x:String>
+                  <x:String>Check</x:String>
+                  <x:String>Credits check VB J4U 5 DAY V</x:String>
+                  <x:String>Cummltve Prepaid Data Rev</x:String>
+                  <x:String>Customer Care: Handset Profile</x:String>
+                  <x:String>CVM_WEEKLY_CAMPAIGN_REPORT</x:String>
+                  <x:String>Dashboard Prepaid Voice Daily</x:String>
+                  <x:String>Dashboard Prepaid Voice Hourly</x:String>
+                  <x:String>Dashboard Prepaid Voice Onet D</x:String>
+                  <x:String>Dashboard Prepaid Voice Onet H</x:String>
+                  <x:String>Data Behind</x:String>
+                  <x:String>DATA USAGE QUERY</x:String>
+                  <x:String>Data_Behind</x:String>
+                  <x:String>Data_behind_Deatail</x:String>
+                  <x:String>DATA_USAGE_SGSN</x:String>
+                  <x:String>DB Space Status</x:String>
+                  <x:String>DB user password expiry</x:String>
+                  <x:String>Debit check VB J4U 5 DAY V</x:String>
+                  <x:String>FM - Call Records Check</x:String>
+                  <x:String>FM - Data Usage (Rating Group)</x:String>
+                  <x:String>FM - MSC vs OCS Usage</x:String>
+                  <x:String>FM - NRT High Outgoing Calls</x:String>
+                  <x:String>FM - PREPAID ROAMERS NO INMOC</x:String>
+                  <x:String>FM - PSC Data Usage per MSISDN</x:String>
+                  <x:String>G2 Child Balances</x:String>
+                  <x:String>G2 Customer Statement</x:String>
+                  <x:String>G2 Customer Statement backup</x:String>
+                  <x:String>G2 Customer Statement test</x:String>
+                  <x:String>G2_cust_statement_test_kh</x:String>
+                  <x:String>Generated Tokens(G2)</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f6fb49e4-0dce-4228-9818-e4f2d5ec7a2c" InformativeScreenshot="876d25a3017aa48a7df2a46a90a14f10" Selector="&lt;webctrl class='GPYEVMMBFO' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SELECT' /&gt;" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>
